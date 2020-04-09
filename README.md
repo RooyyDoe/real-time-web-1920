@@ -86,5 +86,5 @@ Bad words..
 
 ## Credits
 
-[Stefan Gerrits](https://github.com/StefanGerrits2/) - Showed me how to add classes to my emits.
+* [Stefan Gerrits](https://github.com/StefanGerrits2/) - Showed me how to add classes to my emits.
 
