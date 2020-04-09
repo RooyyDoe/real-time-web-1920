@@ -1,8 +1,8 @@
-# Real Time Web - Chat App
-
-This will be a small chat app that I made for Real Time Web.
+##  Bad word chat app
 
 <img width="676" alt="Schermafdruk 2020-04-09 19 50 42" src="https://user-images.githubusercontent.com/40355914/78925243-72a29a80-7a9b-11ea-960a-a4b146ba1d13.png">
+
+### Demo will be live at [Bad word chat app](https://switch-chat-app.herokuapp.com/)
 
 ## Install
 
