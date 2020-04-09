@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/RooyyDoe/real-time-web-1920#readme",
   "dependencies": {
+    "bad-words": "^3.0.3",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.3",
     "handlebars": "^4.7.6",
