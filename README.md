@@ -76,7 +76,12 @@ ___
 
 ## Special Feature
 
-Bad words..
+I've created a app that sensors bad words, so there will be no hate on my unique chat app. The messages will go through a filter and if there is any bad word in the message it will automaticly put *******
+
+For this I've used a NPM package that has a bad-word library, so if one of the words in a message is also in the library it will get filterd to a bad-word.
+
+<img width="256" alt="Schermafdruk 2020-04-09 20 53 08" src="https://user-images.githubusercontent.com/40355914/78930313-2c9e0480-7aa4-11ea-9dc6-769a8ffcea9b.png">
+
 
 ## Sources
 
