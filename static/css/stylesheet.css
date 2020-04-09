@@ -66,18 +66,24 @@ button {
 
 #message-output-list, 
 #feedback-output {
-    padding: 0em 3em 4.1em 0em;
+    padding: 2em 1.5em 8em;
 }
 
-.new-message {
-    padding: 1em;
+.message-output {
+    padding: .5em 1em;
     width: fit-content;
     border-radius: 1em;
     margin: 1em;
-    margin-left: auto;
-    color: white;
+    background-color: white;
+    color: black;
     text-align: right;
-    border: 1px solid white;
+}
+
+#feedback-output {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -8%;
 }
 
 #new-feedback {
@@ -85,7 +91,52 @@ button {
     width: fit-content;
     border-radius: 1em;
     margin: 1em;
-    margin-left: auto;
+    margin: 0 auto;
     color: white;
     text-align: right;
+}
+
+.join {
+    background-color: #d8b9c3;
+    margin-left: auto;
+}
+
+.join > p {
+    color: Black;
+}
+
+.disconnect {
+    background-color: #f1f3f4;
+    margin-left: auto;
+    opacity: .7;
+}
+
+.disconnect > p {
+    color: black;
+    opacity: .5;
+}
+
+.own-message {
+    background-color: #363062;
+    margin-left: auto;
+}
+
+.own-message > p {
+    color: white;
+}
+
+.their-message {
+    background-color: #4d4c7d;
+}
+
+.their-message > p {
+    color: white;
+}
+
+.connect {
+    background-color: #4d4c7d;
+}
+
+.connect > p{
+    color: white;
 }

@@ -7,30 +7,40 @@ const btn = document.getElementById('send-button')
 const output = document.getElementById('message-output-list')
 const feedback = document.getElementById('new-feedback')
 
-const name = prompt('What is your name?')
+let name = prompt('What is your name?')
 let timeout
 
-appendMessage('You joined')
+if (name == undefined || name == '') {
+    name = 'Guest';
+}
+
+appendMessage('You joined', 'join')
 
 socket.emit('new-user', name)
 
 
-socket.on('chat-message', data => {
+socket.on('own-chat-message', message => {
     feedback.innerText = ''
-    appendMessage(`${data.name}: ${data.message}`)
+    appendMessage(`${message}`, 'own-message')
+})
+
+socket.on('their-chat-message', data => {
+    feedback.innerText = ''
+    appendMessage(`${data.name}: ${data.message}`, 'their-message')
 })
 
 socket.on('user-connected', name => {
-    appendMessage(`Say hello to ${name}`)
+    appendMessage(`Say hello to ${name}`, 'connect')
 })
 
 socket.on('user-disconnected', name => {
-    appendMessage(`${name} left the server`)
+    appendMessage(`${name} left the server`, 'disconnect')
 })
 
-socket.on('typing-message', name => {
+socket.on('someone-is-typing', name => {
     if (name) {
         feedback.innerText = `${name} is typing a message...`
+        console.log('test')
     } else {
         feedback.innerText = ''
     }
@@ -39,24 +49,24 @@ socket.on('typing-message', name => {
 messageForm.addEventListener('submit', event => {
     event.preventDefault()
     const message = messageInput.value
-    appendMessage(`You: ${message}`)
     socket.emit('send-message', message)
     messageInput.value = ''
 })
 
-messageInput.addEventListener('keyup', () => {
+messageInput.addEventListener('keypress', () => {
     socket.emit('typing-message', name)
     clearTimeout(timeout)
-    timeout = setTimeout(timeoutFunction, 2000)
+    timeout = setTimeout(timeoutFunction, 1000)
 })
 
 function timeoutFunction() {
     socket.emit("typing-message", false);
 }
 
-function appendMessage(message) {
+function appendMessage(message, style) {
     const messageElement = document.createElement('div')
     messageElement.classList.add('message-output')
+    messageElement.classList.add(style);
 
     const newMessage = document.createElement('p')
     newMessage.classList.add('new-message')

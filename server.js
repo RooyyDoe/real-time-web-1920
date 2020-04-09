@@ -5,6 +5,7 @@ const path = require('path');
 const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
+
 const port = process.env.PORT || 5000;
 const publicPath = path.join(__dirname, './static/');
 
@@ -18,18 +19,19 @@ io.on('connection', socket => {
         socket.broadcast.emit('user-connected', name)
     })
 
-    socket.on('disconnect', () => {
+    socket.on('disconnect', name => {
         socket.broadcast.emit('user-disconnected', users[socket.id])
         delete users[socket.id]
     })
 
     socket.on('send-message', message => {
-        socket.broadcast.emit('chat-message', { message: message, name: users[socket.id] })
+        socket.broadcast.emit('their-chat-message', { message: message, name: users[socket.id] })
+        socket.emit('own-chat-message', message);
     })
 
     socket.on('typing-message', name => {
         users[socket.id] = name
-        socket.broadcast.emit('typing-message', name)
+        socket.broadcast.emit('someone-is-typing', name)
     })
 });
 
