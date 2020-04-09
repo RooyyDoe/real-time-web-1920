@@ -84,4 +84,7 @@ Bad words..
 * [First tutorial I have watched](https://www.youtube.com/watch?v=rxzOqP9YwmM&t=926s) - Helped me alot by understanding socket.io
 * [Second tutorial I have watched](https://www.youtube.com/watch?v=vQjiN8Qgs3c) - Gave me a better understanding what socket.io does and how to implement ...typing
 
+## Credits
+
+[Stefan Gerrits](https://github.com/StefanGerrits2/) - Showed me how to add classes to my emits.
 
