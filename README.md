@@ -1,22 +1,24 @@
-#  Bad word chat app
+#  Poké fight
+
+In this application users will be able to battle it out in a real-time pokemon battle.
+
+**Image loading...**
 
 - [application concept](#application-concept)
 
 ## Application concept
 
-In this application the users are able to search their own or somebody elses summoners name. When the search results match with one of the records out of the data the user will see a profile page displayed. When this summoner is in game this will be shown in the profile page. The user will be notified if the summoner is playing a live game and will be able to click on this match. When the user clicks on the live match, the in-game time will be displayed and the user will also be able to see the different champions that are being played in this match.
+In this application the users are able to start a pokemon battle with each other. A pokemon trainer has to pick a pokemon that is going to fight along their side. the pokemon trainers can select attacks for each pokemon to attack the opponent. The fight will go on till one of the pokemon has fainted, which will happen when the health bar reaches zero. After a battle the winning pokemon trainer gets the gold.
 
-On the profile page of a summoner the user will be able to see different statistics of the summoner came out of the search result. Matches that already have been played will be listed under each other. When the user clicks on one of these matches, various details will be displayed on the screen. Details like kills, deaths, assists, gold earnings, Damage dealth, champion picture, summoner names, etc. When the summoner is playing a live match and the game is over it will show up in the list of played matches.
-
-The profile page will also have the champions of the summoner that he plays the most. This will be a top 10 list with the most played champions from this profile. The statistics in this part of the profile will also get updated when a summoner plays the same champion more often then other champions in the top 10 list.
-
-The summoners do have different ranks in-game. On the profile page they will be displayed for everyone to see them. There will be three elements for this feature, because there are multiple ranks that summoners can acquire in league of legends.
+If you sign up to be a pokemon trainer you will be able to select five pokemons which then will be your own. These pokemons all have four attacks that you can use to attack your opponents with in a real pokemon battle. 
 
 ## Extra features..
 
-- Users will be able to search up a champion and will be able to see details and information about this champion.
-- Users will be able to see champion builds from pro players that have played the same champion before.
-- Users will be able to see who is streaming league of legends on the live platform Twitch.
+- Pokemon trainers will be able to level up their pokemon from 0 to 99. (This will happen by clicking, fighting or in-game items)
+- Pokemon trainers will be able to battle 2 v 2 where they can invite their friends into a real pokemon battle.
+- Wild pokemons will randomly appear on the screen of the pokemon trainer and they will be able to battle and catch the wild pokemon.
+- Pokemon trainers can select a view skins for their character to wear into battles.
+
 
 ## Install
 
