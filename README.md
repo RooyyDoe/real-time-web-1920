@@ -1,6 +1,22 @@
 #  Bad word chat app
 
-<img width="676" alt="Schermafdruk 2020-04-09 19 50 42" src="https://user-images.githubusercontent.com/40355914/78925243-72a29a80-7a9b-11ea-960a-a4b146ba1d13.png">
+- [application concept](#application-concept)
+
+## Application concept
+
+In this application the users are able to search their own or somebody elses summoners name. When the search results match with one of the records out of the data the user will see a profile page displayed. When this summoner is in game this will be shown in the profile page. The user will be notified if the summoner is playing a live game and will be able to click on this match. When the user clicks on the live match, the in-game time will be displayed and the user will also be able to see the different champions that are being played in this match.
+
+On the profile page of a summoner the user will be able to see different statistics of the summoner came out of the search result. Matches that already have been played will be listed under each other. When the user clicks on one of these matches, various details will be displayed on the screen. Details like kills, deaths, assists, gold earnings, Damage dealth, champion picture, summoner names, etc. When the summoner is playing a live match and the game is over it will show up in the list of played matches.
+
+The profile page will also have the champions of the summoner that he plays the most. This will be a top 10 list with the most played champions from this profile. The statistics in this part of the profile will also get updated when a summoner plays the same champion more often then other champions in the top 10 list.
+
+The summoners do have different ranks in-game. On the profile page they will be displayed for everyone to see them. There will be three elements for this feature, because there are multiple ranks that summoners can acquire in league of legends.
+
+## Extra features..
+
+- Users will be able to search up a champion and will be able to see details and information about this champion.
+- Users will be able to see champion builds from pro players that have played the same champion before.
+- Users will be able to see who is streaming league of legends on the live platform Twitch.
 
 ## Install
 
@@ -30,66 +46,12 @@ npm run dev
 
 Server running on **localhost:5000**
 
-**Demo** also will be running live at [Bad word chat app](https://switch-chat-app.herokuapp.com/)
-
-## Tech 
-
-### _chat related events_
-
-> new-user
-
-When a new user joins it will pop-up in chat.
-
-___
-
-> own-chat-message
-
-These are the chat messages from the user it self.
-
-___
-
-> their-chat-message
-
-These are the chat messages from the other users in the chat.
-
-___
-
-> someone-is-typing
-
-When a user is typing the other users in the chat will see this at the bottom.
-
-___
-
-### _general related events_
-
-> user-disconnected
-
-When a user disconnects it will show a message in the chat of the user leaving.
-
-___
-
-> user-connected
-
-When a new user connects to the chat it will show a message in the chat.
-
-___
-
-## Special Feature
-
-I've created a app that sensors bad words, so there will be no hate on my unique chat app. The messages will go through a filter and if there is any bad word in the message it will automaticly put *******
-
-For this I've used a NPM package that has a bad-word library, so if one of the words in a message is also in the library it will get filterd to a bad-word.
-
-<img width="256" alt="Schermafdruk 2020-04-09 20 53 08" src="https://user-images.githubusercontent.com/40355914/78930313-2c9e0480-7aa4-11ea-9dc6-769a8ffcea9b.png">
+**Demo** also will be running live at [Still Loading]()
 
 
 ## Sources
 
 * [Mozilla Developer Network](https://developer.mozilla.org/en-US/) - I mostly used this site to obtain my sources
-* [First tutorial I have watched](https://www.youtube.com/watch?v=rxzOqP9YwmM&t=926s) - Helped me alot by understanding socket.io
-* [Second tutorial I have watched](https://www.youtube.com/watch?v=vQjiN8Qgs3c) - Gave me a better understanding what socket.io does and how to implement ...typing
 
 ## Credits
-
-* [Stefan Gerrits](https://github.com/StefanGerrits2/) - Showed me how to add classes to my emits.
 
