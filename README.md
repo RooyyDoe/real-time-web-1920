@@ -52,7 +52,7 @@ Server running on **localhost:5000**
 
 ## Data life cycle
 
-![Web 1920 – 1](https://user-images.githubusercontent.com/40355914/79582769-7dc57e00-80cc-11ea-870f-1d0ce39bc8f9.png)
+![Web 1920 – 1](https://user-images.githubusercontent.com/40355914/79583007-d5fc8000-80cc-11ea-8114-e9bb06cb2de8.png)
 
 ## Sources
 
