@@ -50,6 +50,9 @@ Server running on **localhost:5000**
 
 **Demo** also will be running live at [Still Loading]()
 
+## Data life cycle
+
+![Web 1920 – 1](https://user-images.githubusercontent.com/40355914/79582769-7dc57e00-80cc-11ea-870f-1d0ce39bc8f9.png)
 
 ## Sources
 
